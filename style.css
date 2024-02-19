@@ -42,6 +42,29 @@ body
     justify-content: center;
 }
 
+.animation-bg
+{
+    background: linear-gradient(-45deg, #ee7752,yellow , orange,  #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 7s ease infinite;
+}
+
+@keyframes gradient
+{
+    0%
+    {
+        background-position: 0% 50%;
+    }
+    50%
+    {
+        background-position: 100% 50%;
+    }
+    100%
+    {
+        background-position: 0% 50%;
+    }
+}
+
 .inner-circle
 {
     width: 240px;
@@ -177,6 +200,7 @@ body
     background-color: rgba(255, 255, 255, 0.473);
     border: 1px solid black;
     color: black;
+    cursor: pointer;
 }
 
 .hidden
