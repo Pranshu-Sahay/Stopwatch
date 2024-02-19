@@ -1,0 +1,185 @@
+
+* {
+    margin: auto;
+    
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    
+}
+
+body
+{
+    font-family: sans-serif;
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+    background-color: #C6DEF1;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .watch{
+  
+   margin: auto;
+
+} */
+
+.container
+{
+    
+    margin: 50px;
+}
+
+.outer-circle
+{
+    width: 255px;
+    height: 255px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner-circle
+{
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    background-color: #EADBDD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.text
+{
+    color: black;
+    font-size: 23px;
+}
+
+.Minute
+{
+    font-size: 47px;
+}
+
+.Sec
+{
+    font-size: 39px;
+}
+
+.Msec
+{
+    font-size: 27px;
+}
+
+.button-wrapper
+{
+    width: 250px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.button-play
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: #DBCDF0;
+    cursor: pointer;
+}
+
+.button-reset
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: #fcd5ce;
+    color: black;
+    cursor: pointer;
+}
+
+.button-lap
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: #ffcad4;
+    color: black;
+    cursor: pointer;
+}
+
+.button:hover
+{
+    background-color: white;
+    color: black;
+}
+
+.laps
+{
+    overflow: auto;
+    list-style: none;
+    color: black;
+    text-align: center;
+    height: 250px;
+    width: 250px;
+    position: relative;
+    padding: 30px;
+
+}
+
+.laps::-webkit-scrollbar
+{
+    display: none;
+}
+
+
+.lap-item
+{
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #444;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+
+.number
+{
+    color: black;
+}
+
+.time-stamp
+{
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.lap-clear
+{
+    display: block;
+    position: fixed;
+    z-index: 1000;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 180px;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.473);
+    border: 1px solid black;
+    color: black;
+}
+
+.hidden
+{
+    visibility: hidden;
+}
