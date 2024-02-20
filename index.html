@@ -13,9 +13,9 @@
         <div class="watch">
             <div class="outer-circle">
                 <div class="inner-circle">
-                    <span class="text Minute">0 :</span>
-                    <span class="text Sec">&nbsp;0 :</span>
-                    <span class="text Msec">&nbsp;0</span>
+                    <span class="text minute">0 :</span>
+                    <span class="text sec">&nbsp;0 :</span>
+                    <span class="text msec">&nbsp;0</span>
                 </div>
             </div>
             <div class="button-wrapper">
@@ -80,11 +80,11 @@
                
                 centiSec = setInterval(() =>
                 {
-                    if (centiCounter === 1000)
+                    if (centiCounter === 100)
                     {
                         centiCounter = 0;  
                     }
-                    centiSecond.innerText = `&nbsp;${++centiCounter}`;
+                    centiSecond.innerHTML = `&nbsp;${++centiCounter}`;
                 }, 10);
 
                 isplay = true;
@@ -111,7 +111,7 @@
             lapButton.classList.add("hidden");
             resetButton.classList.add("hidden");
             second.innerHTML = '&nbsp;0 :';
-            centiSecond.innerHTML = '&nbsp;0 :';
+            centiSecond.innerHTML = '&nbsp;0 ';
             minute.innerHTML = '0 :';
 
         }
